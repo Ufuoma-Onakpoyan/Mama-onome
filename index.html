@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mama Onome Natural Health – Premium natural wellness products in Nigeria. Jinja Herbal Extract and ULTRA H2 Hydrogen Water Bottle for everyday health and vitality.">
+  <meta name="keywords" content="natural wellness, herbal extract, hydrogen water, Nigeria, Mama Onome, Jinja, wellness products">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mama Onome Natural Health | Natural Wellness. Modern Living.">
+  <meta property="og:description" content="Premium natural wellness products designed to support everyday health and vitality. Nigeria-based wellness brand.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_NG">
+
+  <title>Mama Onome Natural Health | Natural Wellness. Modern Living.</title>
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%231a4d3a' width='32' height='32' rx='6'/%3E%3Cpath fill='%23e8e0d5' d='M16 8c-2 0-4 1.5-4 4 0 1.5.8 2.8 2 3.5v5h4v-5c1.2-.7 2-2 2-3.5 0-2.5-2-4-4-4z'/%3E%3C/svg%3E">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              900: '#1a4d3a',
+              800: '#225d47',
+              700: '#2d6b52',
+              600: '#3a7d61',
+              500: '#4a9070',
+            },
+            sand: {
+              50: '#faf8f5',
+              100: '#f5f0e8',
+              200: '#e8e0d5',
+              300: '#d4c9b8',
+              400: '#b8a890',
+            },
+            cream: '#fdfcfa',
+          },
+          fontFamily: {
+            sans: ['DM Sans', 'system-ui', 'sans-serif'],
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.7s ease-out forwards',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  
+  <style>
+    html { scroll-behavior: smooth; }
+    .animate-on-scroll { opacity: 0; }
+    .animate-on-scroll.visible { animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes heroReveal {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero-pattern {
+      background-image: 
+        radial-gradient(ellipse 80% 50% at 50% 0%, rgba(26, 77, 58, 0.08) 0%, transparent 55%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c-2 0-4 2-4 4v2c0 2 2 4 4 4s4-2 4-4V9c0-2-2-4-4-4zm0 42c-2 0-4 2-4 4v2c0 2 2 4 4 4s4-2 4-4v-2c0-2-2-4-4-4zm-20-20c0-2 2-4 4-4h2c2 0 4 2 4 4s-2 4-4 4h-2c-2 0-4-2-4-4zm42 0c0-2 2-4 4-4h2c2 0 4 2 4 4s-2 4-4 4h-2c-2 0-4-2-4-4z' fill='%231a4d3a' fill-opacity='0.04'/%3E%3C/svg%3E");
+    }
+    .hero-enter > * { opacity: 0; animation: heroReveal 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+    .hero-enter > *:nth-child(1) { animation-delay: 0.1s; }
+    .hero-enter > *:nth-child(2) { animation-delay: 0.2s; }
+    .hero-enter > *:nth-child(3) { animation-delay: 0.3s; }
+    .hero-enter > *:nth-child(4) { animation-delay: 0.4s; }
+    .hero-enter > *:nth-child(5) { animation-delay: 0.5s; }
+    .hero-enter > *:nth-child(6) { animation-delay: 0.6s; }
+    .hero-enter > *:nth-child(7) { animation-delay: 0.7s; }
+    .hero-enter > *:nth-child(8) { animation-delay: 0.85s; }
+    .product-card { transition: transform 0.4s ease, box-shadow 0.4s ease; }
+    .product-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -12px rgba(26, 77, 58, 0.15); }
+    .product-card img { transition: transform 0.5s ease; }
+    .product-card:hover img { transform: scale(1.05); }
+    .btn-primary { transition: transform 0.2s ease, background-color 0.2s ease; }
+    .btn-primary:hover { transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .nav-link { transition: color 0.2s ease; }
+    .floating-wa { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .floating-wa:hover { box-shadow: 0 12px 24px -8px rgba(37, 211, 102, 0.4); }
+    .icon-box:hover { transform: scale(1.05); }
+    .icon-box { transition: transform 0.3s ease; }
+  </style>
+</head>
+<body class="font-sans text-forest-900 bg-cream antialiased">
+  
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-sand-200/80">
+    <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="#hero" class="text-lg font-semibold text-forest-900 tracking-tight">Mama Onome Natural Health</a>
+      <div class="flex items-center gap-6">
+        <a href="#products" class="nav-link hidden sm:inline text-sm text-forest-700 hover:text-forest-900">Products</a>
+        <a href="#about" class="nav-link hidden sm:inline text-sm text-forest-700 hover:text-forest-900">About</a>
+        <a href="#multistream" class="nav-link hidden sm:inline text-sm text-forest-700 hover:text-forest-900">MultiStream</a>
+        <a href="https://wa.me/2348058372307?text=Hi!%20I%20visited%20Mama%20Onome%20Natural%20Health%20and%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-forest-800 text-cream text-sm font-medium hover:bg-forest-700 transition-colors">Order on WhatsApp</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero-pattern min-h-screen flex flex-col justify-center pt-20 pb-16 px-5">
+    <div class="max-w-3xl mx-auto text-center hero-enter">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-forest-900 tracking-tight leading-tight">
+        Mama Onome Natural Health
+      </h1>
+      <p class="mt-4 text-xl sm:text-2xl text-forest-700 font-light">
+        Natural Wellness. Modern Living.
+      </p>
+      <p class="mt-6 text-sand-400 font-normal text-base sm:text-lg max-w-xl mx-auto">
+        Premium natural wellness products designed to support everyday health and vitality.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/2348058372307?text=Hi!%20I%20visited%20Mama%20Onome%20Natural%20Health%20and%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center justify-center px-8 py-4 rounded-full bg-forest-800 text-cream font-medium hover:bg-forest-700 focus:outline-none focus:ring-2 focus:ring-forest-600 focus:ring-offset-2">
+          Order on WhatsApp
+        </a>
+        <a href="#products" class="btn-primary inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-forest-800 text-forest-800 font-medium hover:bg-forest-800 hover:text-cream focus:outline-none focus:ring-2 focus:ring-forest-600 focus:ring-offset-2">
+          View Products
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 sm:py-28 px-5 bg-sand-50">
+    <div class="max-w-3xl mx-auto text-center animate-on-scroll">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-forest-900 tracking-tight">
+        About Mama Onome Natural Health
+      </h2>
+      <p class="mt-8 text-forest-700 leading-relaxed">
+        Mama Onome Natural Health is a Nigeria-based wellness brand committed to providing natural health solutions for individuals and families. We combine trusted herbal traditions with modern wellness innovations to promote balanced, healthy living.
+      </p>
+      <p class="mt-6 text-forest-700 leading-relaxed">
+        Our mission is simple: make natural wellness accessible, reliable, and easy to integrate into daily life.
+      </p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-20 sm:py-28 px-5">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-forest-900 tracking-tight text-center animate-on-scroll">
+        Our Products
+      </h2>
+      <div class="mt-14 grid sm:grid-cols-2 gap-8 lg:gap-10">
+        
+        <!-- Product 1 -->
+        <article class="product-card animate-on-scroll rounded-2xl bg-white border border-sand-200 shadow-sm overflow-hidden">
+          <div class="aspect-[4/3] bg-sand-100 overflow-hidden">
+            <img src="images/jinja-herbal-extract.png" alt="Jinja Herbal Extract – herbal wellness tonic in white bottles with green caps" class="w-full h-full object-cover object-center">
+          </div>
+          <div class="p-8 sm:p-10">
+            <h3 class="text-xl font-semibold text-forest-900">Jinja Herbal Extract</h3>
+            <p class="mt-4 text-forest-700 leading-relaxed">
+              A carefully formulated herbal wellness tonic designed to support digestion, promote natural detoxification, and maintain overall body balance.
+            </p>
+            <ul class="mt-6 space-y-2 text-forest-700 text-sm">
+              <li class="flex items-start gap-2">
+                <span class="text-forest-600 mt-0.5">•</span>
+                Supports digestive wellness
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-forest-600 mt-0.5">•</span>
+                Promotes natural cleansing
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-forest-600 mt-0.5">•</span>
+                Made from selected herbal ingredients
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-forest-600 mt-0.5">•</span>
+                Designed for everyday wellness support
+              </li>
+            </ul>
+            <a href="https://wa.me/2348058372307?text=Hi!%20I%20would%20like%20to%20order%20the%20Jinja%20Herbal%20Extract%20from%20Mama%20Onome%20Natural%20Health." target="_blank" rel="noopener noreferrer" class="btn-primary mt-8 inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 rounded-full bg-forest-800 text-cream font-medium hover:bg-forest-700 focus:outline-none focus:ring-2 focus:ring-forest-600 focus:ring-offset-2">
+              Order Now
+            </a>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="animate-on-scroll rounded-2xl bg-white border border-sand-200 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+          <div class="aspect-[4/3] bg-sand-100 overflow-hidden">
+            <img src="images/ultra-h2.png" alt="ULTRA H2 Molecular Hydrogen water bottle – portable hydrogen water generator" class="w-full h-full object-cover object-center">
+          </div>
+          <div class="p-8 sm:p-10">
+            <h3 class="text-xl font-semibold text-forest-900">ULTRA H2 Hydrogen Water Bottle</h3>
+            <p class="mt-4 text-forest-700 leading-relaxed">
+              A portable hydrogen water generator that transforms regular drinking water into hydrogen-infused antioxidant water within minutes, supporting hydration and daily wellness.
+            </p>
+            <ul class="mt-6 space-y-2 text-forest-700 text-sm">
+              <li class="flex items-start gap-2">
+                <span class="text-forest-600 mt-0.5">•</span>
+                Advanced electrolysis technology
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-forest-600 mt-0.5">•</span>
+                Produces hydrogen-rich water
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-forest-600 mt-0.5">•</span>
+                Portable and easy to use
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-forest-600 mt-0.5">•</span>
+                Ideal for home, office, and travel
+              </li>
+            </ul>
+            <a href="https://wa.me/2348058372307?text=Hi!%20I%20would%20like%20to%20order%20the%20ULTRA%20H2%20Hydrogen%20Water%20Bottle%20from%20Mama%20Onome%20Natural%20Health." target="_blank" rel="noopener noreferrer" class="btn-primary mt-8 inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 rounded-full bg-forest-800 text-cream font-medium hover:bg-forest-700 focus:outline-none focus:ring-2 focus:ring-forest-600 focus:ring-offset-2">
+              Order Now
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-20 sm:py-28 px-5 bg-sand-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-forest-900 tracking-tight text-center animate-on-scroll">
+        Why Choose Mama Onome Natural Health?
+      </h2>
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="animate-on-scroll text-center">
+          <div class="icon-box inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-forest-800/10 text-forest-800">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-forest-900">Quality-Focused</h3>
+          <p class="mt-2 text-sm text-forest-700">We prioritize quality in every product we offer.</p>
+        </div>
+
+        <div class="animate-on-scroll text-center">
+          <div class="icon-box inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-forest-800/10 text-forest-800">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-forest-900">Natural Ingredients</h3>
+          <p class="mt-2 text-sm text-forest-700">Selected ingredients for your wellness journey.</p>
+        </div>
+
+        <div class="animate-on-scroll text-center">
+          <div class="icon-box inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-forest-800/10 text-forest-800">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-forest-900">Customer-Centered Service</h3>
+          <p class="mt-2 text-sm text-forest-700">We're here to support you every step of the way.</p>
+        </div>
+
+        <div class="animate-on-scroll text-center">
+          <div class="icon-box inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-forest-800/10 text-forest-800">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+            </svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-forest-900">Nationwide Delivery (Nigeria)</h3>
+          <p class="mt-2 text-sm text-forest-700">We deliver across Nigeria for your convenience.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 sm:py-28 px-5">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-forest-900 tracking-tight text-center animate-on-scroll">
+        What Our Customers Say
+      </h2>
+
+      <!-- Jinja Herbal Extract -->
+      <h3 class="mt-14 mb-6 text-lg font-semibold text-forest-800 animate-on-scroll">🌿 Jinja Herbal Extract</h3>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <blockquote class="animate-on-scroll rounded-2xl bg-white border border-sand-200 p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:border-sand-300">
+          <p class="text-forest-700 leading-relaxed italic text-sm">
+            &ldquo;I started taking the Jinja Herbal Extract as part of my wellness routine, and within a few weeks I noticed I felt lighter and more balanced. It has become part of my morning routine now.&rdquo;
+          </p>
+          <footer class="mt-4 text-sm text-forest-600">— Mrs. A., Lagos</footer>
+        </blockquote>
+        <blockquote class="animate-on-scroll rounded-2xl bg-white border border-sand-200 p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:border-sand-300">
+          <p class="text-forest-700 leading-relaxed italic text-sm">
+            &ldquo;What I appreciate most is that it feels natural and not harsh on the body. I&rsquo;ve been more mindful about my health recently, and this has been a good addition to my lifestyle.&rdquo;
+          </p>
+          <footer class="mt-4 text-sm text-forest-600">— Mr. T., Benin City</footer>
+        </blockquote>
+        <blockquote class="animate-on-scroll rounded-2xl bg-white border border-sand-200 p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:border-sand-300">
+          <p class="text-forest-700 leading-relaxed italic text-sm">
+            &ldquo;I was looking for something to support my digestion and overall wellness. The Jinja Herbal Extract has been easy to use and fits well into my daily health routine.&rdquo;
+          </p>
+          <footer class="mt-4 text-sm text-forest-600">— Mrs. K., Abuja</footer>
+        </blockquote>
+      </div>
+
+      <!-- ULTRA H2 Hydrogen Water Bottle -->
+      <h3 class="mt-12 mb-6 text-lg font-semibold text-forest-800 animate-on-scroll">💧 ULTRA H2 Hydrogen Water Bottle</h3>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <blockquote class="animate-on-scroll rounded-2xl bg-white border border-sand-200 p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:border-sand-300">
+          <p class="text-forest-700 leading-relaxed italic text-sm">
+            &ldquo;I drink more water now because of this bottle. It&rsquo;s convenient, stylish, and I like knowing I&rsquo;m staying properly hydrated throughout the day.&rdquo;
+          </p>
+          <footer class="mt-4 text-sm text-forest-600">— Mr. E., Port Harcourt</footer>
+        </blockquote>
+        <blockquote class="animate-on-scroll rounded-2xl bg-white border border-sand-200 p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:border-sand-300">
+          <p class="text-forest-700 leading-relaxed italic text-sm">
+            &ldquo;The ULTRA H2 Bottle is easy to use and perfect for work. I just press a button and wait a few minutes. It has definitely encouraged me to take hydration more seriously.&rdquo;
+          </p>
+          <footer class="mt-4 text-sm text-forest-600">— Mrs. N., Lagos</footer>
+        </blockquote>
+        <blockquote class="animate-on-scroll rounded-2xl bg-white border border-sand-200 p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:border-sand-300">
+          <p class="text-forest-700 leading-relaxed italic text-sm">
+            &ldquo;I travel often, so having a portable hydrogen water bottle makes it easier to maintain my routine wherever I go. It feels like a smart wellness investment.&rdquo;
+          </p>
+          <footer class="mt-4 text-sm text-forest-600">— Mr. S., Abuja</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- MultiStream Business -->
+  <section id="multistream" class="py-20 sm:py-28 px-5 bg-forest-800">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-cream tracking-tight text-center animate-on-scroll">
+        MultiStream Business
+      </h2>
+      <div class="mt-12 text-sand-100 leading-relaxed space-y-6 animate-on-scroll">
+        <p>
+          Are you ready to stop trading your time for a paycheck and start building a legacy of health and wealth? 🌿💰
+        </p>
+        <p>
+          Introducing MultiStream Business, a life-changing opportunity where wellness meets financial freedom. Whether you&rsquo;re looking for an extra ₦50,000 a week or a total career transformation, our ecosystem is built to help you win. By sharing the power of the famous Jinja Herbal Extract, you aren&rsquo;t just selling a product—you&rsquo;re offering a &ldquo;Fresh Start&rdquo; to your community.
+        </p>
+        <p class="font-medium text-cream">Why Join the MultiStream Family?</p>
+        <ul class="space-y-3 list-none pl-0">
+          <li class="flex items-start gap-3">
+            <span class="text-forest-400 shrink-0">✅</span>
+            <span><strong>Dual Impact:</strong> Improve lives with potent herbal wellness while earning a 30% direct referral bonus.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-forest-400 shrink-0">✅</span>
+            <span><strong>Weekly Payouts:</strong> Say goodbye to &lsquo;month-end&rsquo; stress with earnings paid every Friday.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-forest-400 shrink-0">✅</span>
+            <span><strong>Incentives for Grit:</strong> Beyond commissions, our top partners are driving brand-new cars and owning homes through our rewards program.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-forest-400 shrink-0">✅</span>
+            <span><strong>Flexible Entry:</strong> Start where you are! With packages ranging from Entry to Excel, there&rsquo;s a seat at the table for everyone.</span>
+          </li>
+        </ul>
+        <p>
+          Don&rsquo;t just watch others share their &ldquo;Success Alerts&rdquo;—create your own! Let&rsquo;s build your multiple streams of income together.
+        </p>
+      </div>
+      <div class="mt-10 text-center animate-on-scroll">
+        <a href="https://wa.me/2348058372307?text=Hi!%20I%20am%20interested%20in%20joining%20MultiStream%20Business%20with%20Mama%20Onome%20Natural%20Health." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#25D366] text-white font-semibold hover:bg-[#20bd5a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 focus:ring-offset-forest-800">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Join MultiStream Business
+        </a>
+      </div>
+      <!-- Testimonial Videos -->
+      <div class="mt-16 grid sm:grid-cols-3 gap-6 animate-on-scroll">
+        <div class="rounded-xl overflow-hidden bg-forest-900 aspect-video">
+          <video class="w-full h-full object-cover" controls preload="metadata" poster="">
+            <source src="videos/testimonial-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="rounded-xl overflow-hidden bg-forest-900 aspect-video">
+          <video class="w-full h-full object-cover" controls preload="metadata" poster="">
+            <source src="videos/testimonial-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="rounded-xl overflow-hidden bg-forest-900 aspect-video">
+          <video class="w-full h-full object-cover" controls preload="metadata" poster="">
+            <source src="videos/testimonial-3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-20 sm:py-28 px-5 bg-forest-900">
+    <div class="max-w-2xl mx-auto text-center animate-on-scroll">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-cream tracking-tight">
+        Start Your Wellness Journey Today
+      </h2>
+      <p class="mt-6 text-sand-200 leading-relaxed">
+        Ready to experience natural wellness support? Contact us directly on WhatsApp to place your order.
+      </p>
+      <a href="https://wa.me/2348058372307?text=Hi!%20I%20visited%20Mama%20Onome%20Natural%20Health%20and%20would%20like%20to%20start%20my%20wellness%20journey.%20I%20want%20to%20place%20an%20order%20or%20learn%20more." target="_blank" rel="noopener noreferrer" class="mt-10 inline-flex items-center justify-center gap-2 px-10 py-4 rounded-full bg-[#25D366] text-white font-semibold hover:bg-[#20bd5a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 focus:ring-offset-forest-900">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Chat With Us on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/2348058372307?text=Hi!%20I%20visited%20Mama%20Onome%20Natural%20Health%20website%20and%20would%20like%20to%20enquire%20or%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="floating-wa fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#20bd5a] hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2" aria-label="Chat on WhatsApp">
+    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Footer -->
+  <footer class="py-12 px-5 bg-sand-100 border-t border-sand-200">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="font-semibold text-forest-900">Mama Onome Natural Health</p>
+      <p class="mt-1 text-forest-700">Nigeria</p>
+      <p class="mt-2 text-sm text-forest-600">Natural Wellness for Everyday Living</p>
+      <p class="mt-8 text-xs text-forest-600 max-w-xl mx-auto leading-relaxed">
+        These products are not intended to diagnose, treat, cure, or prevent any disease. Always consult a healthcare professional before starting any supplement.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { rootMargin: '0px 0px -60px 0px', threshold: 0.08 });
+
+      document.querySelectorAll('.animate-on-scroll').forEach(function(el) {
+        observer.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>
